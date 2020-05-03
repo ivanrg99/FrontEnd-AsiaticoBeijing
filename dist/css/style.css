@@ -1,0 +1,403 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  color: #505962;
+}
+
+/**---Navbar --**/
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, .6) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #d43c1b !important;
+}
+
+.navbar-brand img {
+  height: 2.5rem;
+  width: 3rem;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #d43c1b;
+}
+
+/** -- Slider -- **/
+.carousel-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  color: azure;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.carousel-item p {
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  color: #d43c1b;
+  font-size: 1.4rem;
+}
+
+
+footer img {
+  height: 7rem;
+  width: 7rem;
+}
+
+.footer-logo {
+  font-size: 4rem;
+  color: #d43c1b !important;
+}
+
+footer {
+  color: azure;
+  background-color: #1c1b1b;
+  padding: 2rem 0 2rem;
+  margin-top: .2rem;
+}
+
+strong {
+  color: #d43c1b;
+  text-decoration: underline;
+}
+
+hr.socket {
+  border-top: .2rem solid gray;
+  width: 100%;
+}
+
+/** MEDIA QUERIES **/
+
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+    ;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+}
+
+/** MENU **/
+
+.btn-info {
+  background-color: #d43c1b;
+  font-size: 1.5rem;
+}
+
+.btn-info:hover {
+  background-color: #ff7a5c;
+}
+
+#menu {
+  background-color: bisque;
+  margin-top: .2rem;
+  padding: 2rem 0 3rem;
+  text-align: center;
+}
+
+.list-group {
+  padding: 5rem;
+}
+
+.list-group-item {
+  background-color: #e3d4aa;
+  font-size: 1.2rem;
+}
+
+.list-group-item small {
+  color: #d43c1b;
+  font-size: 1rem;
+}
+
+.list-group-item h5 {
+  color: black;
+}
+
+.list-group-item:hover {
+  background-color: #ff7a5c;
+}
+
+#menu h2 {
+  color: #d43c1b;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  padding-bottom: .1rem;
+}
+
+
+.card-title {
+  color: #d43c1b;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 10rem;
+  width: 10rem;
+  padding-top: 1rem;
+}
+
+.card {
+  background-color: #e3d4aa;
+}
+
+.card:hover {
+  background-color: coral;
+  webkit-animation: bounce 1s;
+  animation: bounce 1s;
+  cursor: pointer;
+}
+
+.card-columns {
+  padding: 5rem;
+
+  @media (min-width: 576px) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card-columns {
+      column-count: 3;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .card-columns {
+      column-count: 4;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .card-columns {
+      column-count: 5;
+    }
+  }
+}
+
+
+/**SEARCH BAR**/
+
+* {
+  outline: none;
+}
+
+
+#cover .tb {
+  display: table;
+  width: 100%;
+}
+
+#cover .td {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#cover input,
+button {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+#cover {
+  top: 50%;
+  padding: .1rem;
+  padding-right: 2rem;
+  padding-left: 3rem;
+  background-color: #ff7575;
+  border-radius: 2rem;
+  box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
+  transform: scale(0.6);
+}
+
+#cover form {
+  height: 25%;
+}
+
+#cover input[type="text"] {
+  width: 100%;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+#cover input[type="text"]::placeholder {
+  color: beige;
+}
+
+#s-cover {
+  width: 1px;
+  padding-left: 35px;
+}
+
+#cover button {
+  position: relative;
+  display: block;
+  width: 84px;
+  height: 96px;
+  cursor: pointer;
+}
+
+#s-circle {
+  position: relative;
+  top: -8px;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  margin-top: 0;
+  border-width: 15px;
+  border: 15px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s ease all;
+}
+
+#cover button span {
+  position: absolute;
+  top: 68px;
+  left: 43px;
+  display: block;
+  width: 45px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  transform: rotateZ(52deg);
+  transition: 0.5s ease all;
+}
+
+#cover button span:before,
+#cover button span:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotateZ(0);
+  transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle {
+  top: -1px;
+  width: 67px;
+  height: 15px;
+  border-width: 0;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+#s-cover:hover span {
+  top: 50%;
+  left: 56px;
+  width: 25px;
+  margin-top: -9px;
+  transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before {
+  bottom: 11px;
+  transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after {
+  bottom: -11px;
+  transform: rotateZ(-52deg);
+}
+
+#s-cover:hover button span:before,
+#s-cover:hover button span:after {
+  right: -6px;
+  width: 40px;
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  #cover input {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #cover input {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #cover input {
+    font-size: 7rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
