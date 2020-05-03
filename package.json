@@ -1,0 +1,22 @@
+{
+  "name": "FROTNEND",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel build index.html",
+    "run": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ivan roca",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
+  }
+}

@@ -1,0 +1,4 @@
+- Clean main.js
+- Make add menu item UI
+- Download libraries and import them through npm no CDN
+- Make Menu/Offers menu
